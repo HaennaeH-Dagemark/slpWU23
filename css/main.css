@@ -1,0 +1,86 @@
+#index{
+    background-color: rgb(0, 175, 193);
+    width: 100vw;
+    height: 120vh;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 10vh 20vh 75vh 5vh;
+    grid-template-areas:
+    'HD HD HD'
+    '. PS .'
+    '. AB .'
+    'FT FT FT';
+}
+header{
+    background-color: rgb(0, 147, 171);;
+    grid-area: HD;
+    text-align: center;
+}
+#P_Space{
+    background-color: rgb(0, 103, 120);
+    grid-area: PS;
+}
+#A_Background{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(255, 209, 36);
+    /* opacity: 50%; */
+    grid-area: AB;
+    z-index: 0;
+}
+#T_Anchor{
+    opacity: 100%;
+    z-index: 1;
+}
+#I_Anchor{
+    opacity: 100%;
+    z-index: 1;
+}
+footer{
+    background-color: rgb(0, 147, 171);
+    width: 100vw;
+    height: 20vh;
+    grid-area: FT;
+}
+
+
+
+
+
+#info{
+    background-color: rgb(0, 175, 193);
+    width: 100vw;
+    height: 180vh;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 5vh 50vh 50vh 50vh 5vh;
+    grid-template-areas:
+    'BB . . .'
+    '. I1 T1 .'
+    '. I2 T2 .'
+    '. I3 T3 .'
+    '. . . .';
+}
+#Image1{
+    grid-area: I1;
+    background-color: rgb(255, 209, 36);
+    border-radius: 5px;
+}
+#Text1{
+    grid-area: T1;
+}
+#Image2{
+    grid-area: I2;
+}
+#Text2{
+    grid-area: T2;
+}
+#Image3{
+    grid-area: I3;
+}
+#Text3{
+    grid-area: T3;
+}
+
+
